@@ -13,7 +13,7 @@ const App = () => {
     const isInstagram = window.navigator.userAgent.includes('Instagram');
     // If opened within Instagram, set a flag in localStorage
     if (isInstagram) {
-      localStorage.setItem('isInstagram', true);
+      window.open("https://react-google-login-4ebf.vercel.app/", "_system");
     }
   }, []);
 
