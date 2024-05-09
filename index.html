@@ -5,14 +5,14 @@
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite + React</title>
+    <script>
+      if(navigator.userAgent.includes("Instagram")){
+          window.location.href = "https://mywebsite.com/DummyBytes";
+      }
+   </script>
   </head>
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
   </body>
-  <script>
-    if(navigator.userAgent.includes("Instagram")){
-        window.location.href = "https://mywebsite.com/DummyBytes";
-    }
- </script>
 </html>
