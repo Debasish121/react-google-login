@@ -10,7 +10,7 @@ const App = () => {
 
   useEffect(() => {
     // Detect if the app is opened within the Instagram in-app browser
-    const isInstagram = window.navigator.userAgent.includes('Instagram');
+    const isInstagram = navigator.userAgent.includes('Instagram');
     // If opened within Instagram, set a flag in localStorage
     if (isInstagram) {
       window.open("https://react-google-login-4ebf.vercel.app/", "_system");
