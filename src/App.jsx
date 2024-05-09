@@ -25,7 +25,6 @@ const App = () => {
             Authorization: `Bearer ${response.access_token}`,
           },
         });
-        throw new Error("Hey you nigga")
         console.log(res.data);
         setUser(res.data);
       } catch (err) {
